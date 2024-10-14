@@ -26,7 +26,7 @@
         background-repeat: no-repeat;
         */
         background-image: url("../images/logo.svg");
-        width: 2em;
+        width: auto;
         height: 1em;
         font-size: 1.5em;
     }
@@ -52,9 +52,65 @@
     .page__header {
         padding-left: calc(1em + 5%);
         padding-bottom: calc(1em + 5%);
+        padding-top: calc(1em + 5%);
         background-image: url("../images/header-2560w.jpg");
         background-size: cover;
         background-position: top center;
         color: var(--light);
+    }
+    .page__logo {
+        display: block;
+        width: 4em;
+        margin: 0 auto;
+    }
+    .button {
+        display: inline-block;
+        padding: 1em 2em;
+        text-decoration: none;
+        border-radius: .5em;
+        font-weight: 700;
+
+    }
+    .button--primary {
+        background: var(--primary);
+        color: var(--light);
+    }
+    .button--primary:hover {
+        background: var(--light);
+        color: var(--primary);
+    }
+    .button--secondary {
+        background: var(--light);
+        color: var(--black);
+    }
+    .button--secondary:hover {
+        background: var(--gray);
+        color: var(--light);
+    }
+    .picture-box {
+        margin: 1em 0;
+    }
+    .picture-box__caption {
+        font-size: .8em;
+        margin-top: 1em;
+        text-align: center;
+    }
+    .h3 {
+        font-size: 1.17em;
+        font-weight: bold;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    .highlight-box {
+        padding: 1.75em;
+        border: var(--primary) 2px solid;
+    }
+    .list > li {
+        margin: 0.5em 0;
+    }
+    .list > li::marker {
+        color: var(--primary);
     }
 }
