@@ -74,10 +74,11 @@
     .button--primary {
         background: var(--primary);
         color: var(--light);
+    
     }
     .button--primary:hover {
-        background: var(--light);
-        color: var(--primary);
+        background: var(--black);
+        color: var(--light);
     }
     .button--secondary {
         background: var(--light);
@@ -113,4 +114,45 @@
     .list > li::marker {
         color: var(--primary);
     }
+    .page__section {
+        padding: 1em;
+    }
+    .panel {
+        max-width: 17em;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .gallery__item {
+        --margin: 1em;
+        display: inline-block;
+        width: calc(100% - 2*var(--margin));
+        margin : var(--margin);
+    }
+    .gallery__item--50w {
+        width: calc(50% - 2*var(--margin));
+    }
+    .highlight-box--jumbo {
+        text-align: center;
+        padding: 2em;
+        border: var(--gray) 2px solid;
+        background: var(--gray);
+        color: var(--light);
+    }
+    .text-title {
+        margin-bottom: 0.3em;
+        text-align: center;
+        font-size: 3.5em;
+        font-weight: bold;
+    }
+    .text-title--big {
+        font-size: 1.8em;
+    
+    }
+    .text-small {
+        margin-top: 0em;
+        margin-bottom: 1.5em;
+        font-size: .8em;
+        font-weight: bold;
+    }
+
 }
